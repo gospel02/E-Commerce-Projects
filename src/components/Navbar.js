@@ -7,19 +7,24 @@ export default class Navbar extends Component {
     render() {
         return (
             <NavWrapper className='navbar navbar-expand-sm  navbar-dark px-sm-5'>
+                
                 <Link to="/">
-                    <span className='nav-storename'>
-                        <i className='fas fa-home' />
-                    </span> 
+                    <ButtonContainer>
+                        <span>
+                            <i className='fas fa-home' />
+                        </span>
+                    </ButtonContainer> 
                 </Link>
+                
 
                 <ul className='navbar-nav align-items-center'>
                     <li className='nav-item ml-5'>
                         <Link to='/' className='nav-link'>
-                            products
+                            Products
                         </Link>
                     </li>
                 </ul>
+
                 <span className='nav-title ml-auto'>
                     Super Buy
                 </span> 
@@ -29,9 +34,10 @@ export default class Navbar extends Component {
                         <span className='mr-2'>
                             <i className='fas fa-cart-arrow-down' /> 
                         </span>
-                            my cart
+                            Cart
                     </ButtonContainer>
-                </Link> 
+                </Link>
+
             </NavWrapper>
 
         )
@@ -41,16 +47,21 @@ export default class Navbar extends Component {
 const NavWrapper = styled.nav`
 background: var(--mainBlue);
 .nav-link{
-    color: var(--mainWhite)!important;
+    color: var(--darkGray);
     font-size: 1.4rem;
-    text-transform: capitalize;
+    transition:all 1s linear;
+}    
+&:hover{
+    .nav-link{
+        color: var(--dimGray);
+    }
 }
+
 .nav-title{
     color: var(--mainWhite)!important;
     font-size: 2.0rem;
-    text-transform: capitalize;
 }
-.nav-storename{
+.home{
     font-size: 1.4rem;
 }
 `;
