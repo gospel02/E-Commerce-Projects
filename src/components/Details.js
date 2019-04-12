@@ -8,7 +8,7 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const{id, img, description, rating, price, title, inCart} = value.detailProduct;
+                    const{id, img, category, description, rating, price, title, inCart} = value.detailProduct;
                     return(
                         <div className='container py-5'>
 
@@ -27,6 +27,10 @@ export default class Details extends Component {
 
                                 {/* product text */}
                                 <div className='col-10 mx-auto col-md-6 my-3'>
+
+                                    <span className='font-weight-bold mt-3 mb-0'>Category: </span>
+                                    <span className='text-capitalize'>{category}</span>
+                                    
 
                                     <p className='font-weight-bold mt-3 mb-0'>Product Info:</p>
                                     <p className='text-muted lead'>{description}</p>
