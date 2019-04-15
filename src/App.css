@@ -15,12 +15,7 @@ body{
   font-family: 'Merriweather';
   letter-spacing: 0.3rem;
  }
-.text-blue{
-  color: var(--mainBlue);
-}
-.text-bright{
-  color: var(--lightBlue);
-}
+
 .btn-quantity{
   background:transparent;
   font-size: 1rem !important;

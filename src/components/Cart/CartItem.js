@@ -43,7 +43,7 @@ export default function CartItem({item, value}) {
 
                     <div className='eachItem col-10 mx-auto col-lg-2'>
                         <div className='cart-icon' onClick={() =>removeItem(id)}>
-                            <i className='fas fa-trash'></i>
+                            <button className='btn btn-outline-danger mt-2 px-5'>Delete</button>
                         </div>
                     </div>
 
@@ -55,7 +55,10 @@ export default function CartItem({item, value}) {
 
 const ItemsWrapper = styled.div`
 .eachItem{
-    border-bottom:0.1rem solid var(--mainDark)
+    border-bottom:0.1rem solid var(--mainDark);
+}
+.btn{
+    border-radius: 0.5rem;
 }
 
 `

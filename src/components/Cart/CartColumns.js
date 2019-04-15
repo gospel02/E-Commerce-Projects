@@ -9,27 +9,27 @@ export default function CartColumns() {
                     <div className='row'>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p>Product</p>
+                            <p><strong>Product</strong></p>
                         </div>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p>Name of Product</p>
+                            <p><strong>Name of Product</strong></p>
                         </div>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p>Price</p>
+                            <p><strong>Price</strong></p>
                         </div>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p>Quantity</p>
+                            <p><strong>Quantity</strong></p>
                         </div>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p>Total</p>
+                            <p><strong>Total</strong></p>
                         </div>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p>Remove</p>
+                            <p><strong>Remove</strong></p>
                         </div>
 
                     </div>

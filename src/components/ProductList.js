@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title';
 import {storeProducts} from '../data';
-import {ProductConsumer} from '../context';
+import {ProductConsumer} from '../store';
 
 export default class ProductList extends Component {
     state={

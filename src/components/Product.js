@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {ProductConsumer} from '../context';
+import {ProductConsumer} from '../store';
 import PropTypes from 'prop-types';
 
 
 export default class Product extends Component {
     render() {
-        const {id, title, img, price, rating, inCart} = this.props.product;
+        const {id, title, img, price, rating} = this.props.product;
 
         return (
             <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-4 my-3">
@@ -24,7 +24,7 @@ export default class Product extends Component {
                                 value.addToCart(id);
                                 
                             }}>
-                                <i className='fas fa-cart-plus' />
+                                <i className='fas fa-cart-plus' /> Add To Cart
                                 
                             </button>
                             </Link>
@@ -33,7 +33,7 @@ export default class Product extends Component {
                     <div className='card-footer'>
                         <div className='mb-0'>{title}</div>
                         <div className='mb-0'>Rating - {rating} out of 5</div>
-                        <h5 className='font-italic mb-0'>
+                        <h5 className='mb-0'>
                             <span className='mr-1'>$</span>
                             {price}
                         </h5>
@@ -51,7 +51,6 @@ Product.propTypes = {
         img:PropTypes.string,
         title:PropTypes.string,
         price:PropTypes.number,
-        inCart:PropTypes.bool
     }).isRequired
 };
 
@@ -75,8 +74,13 @@ const ProductWrapper = styled.div`
 }
 
 .cart-btn:hover{
-    color: var(--divGray);
+    color: var(--dimGray);
     cursor: pointer;
 }
+
+.card-footer{
+    background: transparent;
+}
+
 `;
 
