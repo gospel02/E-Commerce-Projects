@@ -20,7 +20,7 @@ export default class Navbar extends Component {
                 <ul className='navbar-nav align-items-center'>
                     <li className='nav-item ml-5'>
                         <Link to='/' className='nav-link'>
-                            Stor
+                            Store
                         </Link>
                     </li>
                 </ul>
@@ -50,7 +50,7 @@ background: var(--mainBlue);
     color: var(--darkGray);
     font-size: 1.4rem;
 }
-    
+
 &:hover{
     .nav-link{
         color: var(--dimGray);

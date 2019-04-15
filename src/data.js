@@ -7,8 +7,7 @@ export const storeProducts = [
       "price": 199.99,
       "rating": 4.6,
       "category": "tv",
-      "inCart": false
-    },
+     },
     {
       "id": 2,
       "title": "LG - 75\" Class - LED - UK6190 Series - 2160p",
@@ -173,7 +172,6 @@ export const storeProducts = [
     },
     {
       "id": 20,
-
       "title": "KitchenAid - KV25G0XER Professional 500 Series",
       "description": "Prepare homemade recipes with this KitchenAid Professional 500 Series stand mixer. It has 10 speed levels for accurate whipping and mixing of smooth batters and doughs.",
       "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4598/4598501_rd.jpg",
@@ -192,5 +190,4 @@ export const storeProducts = [
     "price": 199.99,
     "rating": 4.6,
     "category": "tv",
-    "inCart": false
-  };
+    };

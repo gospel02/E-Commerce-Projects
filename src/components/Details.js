@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import {ProductConsumer} from '../context';
 import {Link} from 'react-router-dom';
 import {ButtonContainer} from './Button';
+import styled from 'styled-components';
 
 export default class Details extends Component {
     render() {
         return (
+            <DetailsWrapper>
+                <div className='details'>
             <ProductConsumer>
                 {value => {
                     const{id, img, category, description, rating, price, title, inCart} = value.detailProduct;
@@ -47,14 +50,18 @@ export default class Details extends Component {
                                         <Link to='/'>
                                             <ButtonContainer>Return To Products</ButtonContainer>
                                         </Link>
-                                        <ButtonContainer
-                                            cart
-                                            disabled={inCart ? true : false}
-                                            onclick={() =>{
-                                                value.addToCart(id)
+                                        <Link to='/cart'>
+                                        <button className='cart-btn'
+                                            onClick={() =>{
+                                                value.addToCart(id);
+                                                
                                             }}>
-                                            {inCart ? 'inCart' :  <i className='fas fa-cart-arrow-down' />}
-                                        </ButtonContainer>
+
+                                                <i className='fas fa-cart-plus' />
+
+
+                                        </button>   
+                                        </Link>
                                     </div>
                                 </div>
                             </div>   
@@ -63,7 +70,24 @@ export default class Details extends Component {
                 }}
                 
             </ProductConsumer>
+            </div>
+            </DetailsWrapper>
 
         );
     }
 }
+
+const DetailsWrapper = styled.div`
+
+
+.cart-btn{
+    padding: 0.2rem 0.4rem;
+    background: var(--darkGray);
+    border: none;
+    color: var(--mainWhite);
+    font-size: 1.4rem;
+    border-radius: 0 0 0.5rem 0;
+}
+
+
+`;
