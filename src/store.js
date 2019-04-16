@@ -8,13 +8,12 @@ class ProductProvider extends Component {
         detailProduct: detailProduct,
         cart: [],
         cartTotal: 0,
-        
-        
-
     };
+
     componentDidMount() {
         this.setProducts()
     };
+
     setProducts = () => {
         let tempProducts = [];
         storeProducts.forEach(item => {
@@ -37,8 +36,8 @@ class ProductProvider extends Component {
         this.setState(() => {
             return {detailProduct: product}
         });
-        
     };
+
     addToCart = id =>{
         let tempProducts = [...this.state.products];
         const index = tempProducts.indexOf(this.getItem(id));
@@ -51,7 +50,7 @@ class ProductProvider extends Component {
             return {products: tempProducts,cart:[...this.state.cart, product]};
         },
         () => {
-            this.addTotals()
+            this.Total()
         }
       );
     };
@@ -68,9 +67,9 @@ class ProductProvider extends Component {
                 return{cart:[...tempCart]};
             },
             ()=>{
-                this.addTotals();
+                this.Total();
             }
-            );
+        );
     };
 
     decrement = id => {
@@ -81,7 +80,7 @@ class ProductProvider extends Component {
         product.count = product.count - 1;
 
         if(product.count === 0){
-            this.removeItem(id)
+            this.deleteItem(id)
         }
         else{
             product.total = product.count * product.price;
@@ -90,14 +89,13 @@ class ProductProvider extends Component {
                     return{cart:[...tempCart]};
                 },
                 ()=>{
-                    this.addTotals();
+                    this.Total();
                 }
-        );
-    }
-       
+            );
+        }
     };
 
-    removeItem = id => {
+    deleteItem = id => {
         let tempProducts = [...this.state.products];
         let tempCart = [...this.state.cart];
         tempCart = tempCart.filter(item => item.id !== id);
@@ -113,11 +111,9 @@ class ProductProvider extends Component {
             };
         },
         () => {
-            this.addTotals();
-        }
-        
+            this.Total();
+             }
         );
-
     };
 
     clearCart = () => {
@@ -126,11 +122,11 @@ class ProductProvider extends Component {
 
         },() =>{
             this.setProducts();
-            this.addTotals();
+            this.Total();
         });
     };
 
-    addTotals = () => {
+    Total = () => {
         let Total = 0;
         this.state.cart.map(item => (Total += item.total));
         this.setState(() => {
@@ -149,7 +145,7 @@ class ProductProvider extends Component {
                 addToCart:this.addToCart,
                 increment:this.increment,
                 decrement:this.decrement,
-                removeItem:this.removeItem,
+                deleteItem:this.deleteItem,
                 clearCart:this.clearCart
             }}>
                 {this.props.children}

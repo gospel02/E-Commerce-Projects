@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 export default function Item({item, value}) {
     const {id, title, img, price, total, count} = item;
-    const{increment, decrement, removeItem} = value;
+    const{increment, decrement, deleteItem} = value;
     return (
         <ItemsWrapper>
-            <div class='items'>
+            <div className='items'>
                 <div className='row my-2 text-center'>
 
                     <div className='eachItem col-10 mx-auto col-lg-2'>
@@ -42,7 +42,7 @@ export default function Item({item, value}) {
                     </div>
 
                     <div className='eachItem col-10 mx-auto col-lg-2'>
-                        <div className='cart-icon' onClick={() =>removeItem(id)}>
+                        <div className='cart-icon' onClick={() =>deleteItem(id)}>
                             <button className='btn btn-outline-danger mt-2 px-5'>Delete</button>
                         </div>
                     </div>

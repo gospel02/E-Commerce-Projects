@@ -9,11 +9,11 @@ export default function Columns() {
                     <div className='row'>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p><strong>Product</strong></p>
+                            <p><strong>Image</strong></p>
                         </div>
 
                         <div className='header col-10 mx-auto col-lg-2'>
-                            <p><strong>Name of Product</strong></p>
+                            <p><strong>Title</strong></p>
                         </div>
 
                         <div className='header col-10 mx-auto col-lg-2'>

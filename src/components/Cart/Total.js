@@ -20,13 +20,13 @@ export default function Total({value}) {
                                 </h5>
 
                                 <div>
-                                    <Link to='/'>
+                                    <Link to="/">
                                         <ButtonContainer>Continue Shopping</ButtonContainer>
                                     </Link>
                                 </div>
                                 
                                 <div>
-                                    <Link to='/'>
+                                    <Link to="/">
                                         <button className='btn btn-outline-danger mt-2 px-5'
                                             type ='button'
                                             onClick={() => clearCart()}>
@@ -36,9 +36,9 @@ export default function Total({value}) {
                                 </div>
 
                                 <div>
-                                    <Link className='btn'>
-                                        <ButtonContainer>Submit Order</ButtonContainer>
-                                    </Link>
+                                    
+                                    <ButtonContainer className='btn'>Submit Order</ButtonContainer>
+                                    
                                 </div>
 
                             </div>

@@ -3,6 +3,7 @@ import {ProductConsumer} from '../store';
 import {Link} from 'react-router-dom';
 import {ButtonContainer} from './Button';
 import styled from 'styled-components';
+import Title from './Title';
 
 export default class Details extends Component {
     render() {
@@ -13,7 +14,13 @@ export default class Details extends Component {
                         {value => {
                             const{id, img, category, description, rating, price, title} = value.detailProduct;
                             return(
+
                                 <div className='container py-5'>
+                                
+                                    <React.Fragment>
+                                        <Title name='your' title='Items Details'/>
+            
+                                    </React.Fragment>
 
                                     <div className='row'>
                                         <div className='col-10 mx-auto text-center my-5'>
@@ -78,5 +85,10 @@ const DetailsWrapper = styled.div`
     color: var(--mainWhite);
     font-size: 1.4rem;
     border-radius: 0.5rem;
+}
+
+.cart-btn:hover{
+    color: var(--dimGray);
+    cursor: pointer;
 }
 `;
