@@ -1,15 +1,15 @@
 {
-  "main.css": "/E-Commerce-Project/static/css/main.3a5e0206.chunk.css",
-  "main.js": "/E-Commerce-Project/static/js/main.ebdf5f79.chunk.js",
-  "main.js.map": "/E-Commerce-Project/static/js/main.ebdf5f79.chunk.js.map",
-  "runtime~main.js": "/E-Commerce-Project/static/js/runtime~main.77940d58.js",
-  "runtime~main.js.map": "/E-Commerce-Project/static/js/runtime~main.77940d58.js.map",
-  "static/css/2.077ae248.chunk.css": "/E-Commerce-Project/static/css/2.077ae248.chunk.css",
-  "static/js/2.d65911f0.chunk.js": "/E-Commerce-Project/static/js/2.d65911f0.chunk.js",
-  "static/js/2.d65911f0.chunk.js.map": "/E-Commerce-Project/static/js/2.d65911f0.chunk.js.map",
-  "index.html": "/E-Commerce-Project/index.html",
-  "precache-manifest.1ccd3e10341f33a39ab2d2fa7f3bdc1e.js": "/E-Commerce-Project/precache-manifest.1ccd3e10341f33a39ab2d2fa7f3bdc1e.js",
-  "service-worker.js": "/E-Commerce-Project/service-worker.js",
-  "static/css/2.077ae248.chunk.css.map": "/E-Commerce-Project/static/css/2.077ae248.chunk.css.map",
-  "static/css/main.3a5e0206.chunk.css.map": "/E-Commerce-Project/static/css/main.3a5e0206.chunk.css.map"
+  "main.css": "/E-Commerce-Projects/static/css/main.3a5e0206.chunk.css",
+  "main.js": "/E-Commerce-Projects/static/js/main.e13450c2.chunk.js",
+  "main.js.map": "/E-Commerce-Projects/static/js/main.e13450c2.chunk.js.map",
+  "runtime~main.js": "/E-Commerce-Projects/static/js/runtime~main.125424e4.js",
+  "runtime~main.js.map": "/E-Commerce-Projects/static/js/runtime~main.125424e4.js.map",
+  "static/css/2.077ae248.chunk.css": "/E-Commerce-Projects/static/css/2.077ae248.chunk.css",
+  "static/js/2.be50758e.chunk.js": "/E-Commerce-Projects/static/js/2.be50758e.chunk.js",
+  "static/js/2.be50758e.chunk.js.map": "/E-Commerce-Projects/static/js/2.be50758e.chunk.js.map",
+  "index.html": "/E-Commerce-Projects/index.html",
+  "precache-manifest.185f374948e33dc66c52eacdb9a40bbe.js": "/E-Commerce-Projects/precache-manifest.185f374948e33dc66c52eacdb9a40bbe.js",
+  "service-worker.js": "/E-Commerce-Projects/service-worker.js",
+  "static/css/2.077ae248.chunk.css.map": "/E-Commerce-Projects/static/css/2.077ae248.chunk.css.map",
+  "static/css/main.3a5e0206.chunk.css.map": "/E-Commerce-Projects/static/css/main.3a5e0206.chunk.css.map"
 }
