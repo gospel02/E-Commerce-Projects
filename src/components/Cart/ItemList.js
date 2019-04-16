@@ -1,8 +1,8 @@
 import React from 'react';
-import CartItem from './CartItem';
+import Item from './Item';
 
 
-export default function CartList({value}){
+export default function ItemList({value}){
 
 const {cart} = value;
 
@@ -10,7 +10,7 @@ const {cart} = value;
  return(
      <div className='container-fluid'>
          {cart.map(item=>{
-             return <CartItem key={item.id} item={item} value={value} />
+             return <Item key={item.id} item={item} value={value} />
          })}
          
     </div>

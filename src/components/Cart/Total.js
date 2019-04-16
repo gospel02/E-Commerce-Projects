@@ -4,7 +4,7 @@ import {ButtonContainer} from '../Button';
 import styled from 'styled-components';
 
 
-export default function CartTotals({value}) {
+export default function Total({value}) {
     const{cartTotal, clearCart} = value;
     return(
         <TotalsWrapper>

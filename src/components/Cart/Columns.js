@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-export default function CartColumns() {
+export default function Columns() {
     return(
         <ColumnsWrapper>
             <div className='columns'>

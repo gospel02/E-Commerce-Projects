@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function CartItem({item, value}) {
+export default function Item({item, value}) {
     const {id, title, img, price, total, count} = item;
     const{increment, decrement, removeItem} = value;
     return (

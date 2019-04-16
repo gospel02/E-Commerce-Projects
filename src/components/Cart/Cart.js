@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Title from '../Title';
-import CartColumns from './CartColumns';
+import Columns from './Columns';
 import EmptyCart from './EmptyCart';
 import {ProductConsumer} from '../../store';
-import CartList from './CartList';
-import CartTotals from './CartTotals';
+import ItemList from './ItemList';
+import Total from './Total';
 
 
 export default class Cart extends Component {
@@ -18,9 +18,9 @@ export default class Cart extends Component {
                             return (
                                 <React.Fragment>
                                     <Title name='your' title='Items In Cart'/>
-                                    <CartColumns /> 
-                                    <CartList value={value} />
-                                    <CartTotals value={value} />
+                                    <Columns /> 
+                                    <ItemList value={value} />
+                                    <Total value={value} />
                                 </React.Fragment>
 
                             );
